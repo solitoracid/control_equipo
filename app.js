@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const ejs = require('ejs');
 const _ = require('lodash');
 
-const homeStartingContent = "Bienvenido";
+const movimiento = "Bienvenido";
 
 const app = express();
 
@@ -15,7 +15,7 @@ app.use(express.static("public"));
 app.get("/", (req, res) =>{
     
     res.render("home", {
-        startingContent: homeStartingContent
+        primerMovimiento: movimiento
     })
 
 });
